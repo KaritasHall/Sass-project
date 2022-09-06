@@ -1,0 +1,44 @@
+
+/*Mixin - size and margin of sections*/
+@mixin section-size {
+    height: 50vh;
+    padding-left: 5%;
+    box-sizing: border-box;
+
+    }
+/*Nesting all header elements togehter*/
+
+header {
+    display: block;
+    padding-top: 20px;
+    @include section-size;
+
+
+
+    h1 {
+        color: $accent-color;
+        width: 50vw;
+        max-width: 600px;
+        font-size: 72px;
+
+    }
+
+    h2 {
+        color: black;
+        font-size: 48px;
+
+    }
+
+    img {
+        border-radius: 50%;
+        height: 50vw;
+        width: 50vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        transform: translateX(37%) translateY(-22%);
+
+    }
+
+}

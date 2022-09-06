@@ -1,0 +1,19 @@
+/*Using variables for color palette*/
+$accent-color: #1C3E48;
+$primary-color: #5CA3B4AB;
+
+/*Connecting modules to main style document*/
+@import "./header.scss";
+@import "./footer";
+
+
+/*Body*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+
+}
+
+

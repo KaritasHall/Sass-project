@@ -1,0 +1,107 @@
+/*Using variables for color palette*/
+/*Connecting modules to main style document*/
+/*Mixin - size and margin of sections*/
+/*Nesting all header elements togehter*/
+header {
+  display: block;
+  padding-top: 20px;
+  height: 50vh;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+header h1 {
+  color: #1C3E48;
+  width: 50vw;
+  max-width: 600px;
+  font-size: 72px;
+}
+header h2 {
+  color: black;
+  font-size: 48px;
+}
+header img {
+  border-radius: 50%;
+  height: 50vw;
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  transform: translateX(37%) translateY(-22%);
+}
+
+/*Mixin - size and margin of sections*/
+/*Nesting all footer elements together*/
+#footer-section {
+  height: 50vh;
+  padding-left: 5%;
+  box-sizing: border-box;
+  background-color: rgba(92, 163, 180, 0.6705882353);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  /*Use extend to copy style of main-text - but I can still override by adding changes*/
+}
+#footer-section .main-text, #footer-section #bottom-text {
+  font-size: 18px;
+  width: max(30%, 456px);
+  color: black;
+  line-height: 30px;
+}
+#footer-section #sign-up {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#footer-section #sign-up input {
+  height: 50px;
+  width: 300px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 8px;
+  font-size: 16px;
+}
+#footer-section #sign-up input::-moz-placeholder {
+  color: #1C3E48;
+  font-weight: bold;
+}
+#footer-section #sign-up input:-ms-input-placeholder {
+  color: #1C3E48;
+  font-weight: bold;
+}
+#footer-section #sign-up input::placeholder {
+  color: #1C3E48;
+  font-weight: bold;
+}
+#footer-section #sign-up button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #1C3E48;
+  color: white;
+  font-size: 18px;
+}
+#footer-section #contact {
+  margin-bottom: 50px;
+}
+#footer-section #bottom-text {
+  font-size: 14px;
+}
+#footer-section a {
+  text-decoration: none;
+  color: #1C3E48;
+  font-weight: bold;
+}
+#footer-section a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/*Body*/
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */

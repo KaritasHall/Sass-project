@@ -1,0 +1,87 @@
+/*Mixin - size and margin of sections*/
+@mixin section-size {
+    height: 50vh;
+    padding-left: 5%;
+    box-sizing: border-box;
+
+    }
+
+/*Nesting all footer elements together*/
+
+#footer-section {
+    @include section-size;
+    background-color: $primary-color;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+
+
+    .main-text {
+        font-size: 18px;
+        width: max(30%, 456px);
+        color: black;
+        line-height: 30px;
+
+    }
+
+    #sign-up {
+        font-size: 20px;
+        margin-bottom: 50px;
+
+        input {
+            height: 50px;
+            width: 300px;
+            margin-right: 20px;
+            border-radius: 10px;
+            border: none;
+            padding-left: 8px;
+            font-size: 16px;
+            &::placeholder {
+                color: $accent-color;
+                font-weight: bold;
+
+            }
+        }
+
+
+        button {
+            height: 50px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: $accent-color;
+            color: white;
+            font-size: 18px;
+
+        }
+
+
+
+
+    }
+
+#contact {
+    margin-bottom: 50px;
+
+}
+/*Use extend to copy style of main-text - but I can still override by adding changes*/
+    #bottom-text {
+       @extend .main-text;
+       font-size: 14px;
+
+       }
+
+       a {
+        text-decoration: none;
+        color: $accent-color;
+        font-weight: bold;
+        &:hover {
+           text-decoration: underline;
+           color: black;
+        }
+
+
+
+       }
+}
